@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>English জানালা </title>
     <!-- DaisyUI and Tailwind cdn -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
@@ -88,16 +88,39 @@
             <img src="./assets/hero-student.png" alt="">
         </div>
     </section>
+
     <section>
-        <h2 class="text-center pb-9 text-4xl font-bold"><span class="text-[#00BCFF]">Let's</span> Learn Vocabularies</h2>
-        <div id="level-container" class="flex justify-center gap-5 pb-3 flex-wrap">
+        <h2 class="text-center pb-9 text-4xl font-bold"><span class="text-[#00BCFF]">Let's</span> Learn Vocabularies
+        </h2>
+        <div id="level-container" class="flex justify-center gap-5 pb-3 flex-wrap pb-20">
 
         </div>
-    </section>
-    <section id="word-container" class="bg-gray-200 p-10 w-11/12 mx-auto grid grid-cols-1 md:grid-cols-3 gap-3 " >
-      
 
     </section>
+    <section id="word-container" class="bg-gray-200 p-10 w-11/12 mx-auto grid grid-cols-1 md:grid-cols-3 gap-3 ">
+        <div class="text-center col-span-full">
+            <p class="py-6 text-sm font-medium "><span class="font-bangla">আপনি এখনো কোন</span> Lesson Select <span
+                    class="font-bangla">করেন নি</span></p>
+            <h1 class=" text-4xl font-semibold"> <span class="font-bangla">একটি</span> Lesson Select <span
+                    class="font-bangla">করুন।</span> </h1>
+        </div>
+    </section>
+    <!-- Open the modal using ID.showModal() method -->
+    <!-- <button class="btn" onclick="my_modal_5.showModal()">open modal</button> -->
+    <dialog id="word_modal_5" class="modal modal-bottom sm:modal-middle">
+        <div class="modal-box">
+            <div id="details-container" class="">
+
+            </div>
+            <div class="modal-action">
+                <form method="dialog">
+                    <!-- if there is a button in form, it will close the modal -->
+                    <button class="btn">Close</button>
+                </form>
+            </div>
+        </div>
+    </dialog>
+
     <script src="script.js"></script>
 </body>
 
