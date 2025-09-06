@@ -1,11 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- DaisyUI and Tailwind cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon">
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <!-- Font awsome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 </head>
+
 <body>
-    
+    <!-- Navbar -->
+    <header>
+        <div class="navbar bg-base-100 shadow-sm">
+            <div class="navbar-start">
+                <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </div>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
+                        <li class="btn"><a href=""><i class="fa-solid fa-question"></i> FAQ</a></li>
+                        <li class="btn"><a href=""><i class="fa-solid fa-book-open"></i></a>Learning</li>
+                        <li class="btn"><a href=""><i class="fa-solid fa-arrow-right-from-bracket"></i></a></i>LogOut
+                        </li>
+                    </ul>
+                </div>
+                <a class="btn btn-ghost">
+                    <span class="text-xl font-bold">English</span>
+                    <img src="./assets/logo.png" alt="">
+                    <span class="text-xl font-bangla font-semibold">জানালা</span>
+                </a>
+            </div>
+            <div class="navbar-end hidden lg:flex">
+                <ul class="menu menu-horizontal px-1 gap-4">
+                    <li class="btn btn-outline btn-primary"><a href=""><i class="fa-solid fa-question"></i>FAQ</a></li>
+                    <li class="btn btn-outline btn-primary"><a href=""><i class="fa-solid fa-book-open"></i></a>Learning
+                    </li>
+                    <li class="btn btn-outline btn-primary"><a href=""><i
+                                class="fa-solid fa-arrow-right-from-bracket"></i></a></i>LogOut</li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <section class="flex flex-col-reverse md:flex-row justify-between items-center gap-5 py-4 w-11/12 mx-auto">
+        <div class="flex-1 text-center md:text-left">
+            <h1 class="text-4xl font-bold pb-4"><span class="text-[#00BCFF]">English</span> is easy!!</h1>
+            <p class="text-2xl font-medium pb-5"><span class="font-bangla">আজ থেকেই আপনার ভাষা শেখার যাত্রা শুরু করুন। আপনি
+                    যদি নতুন হন অথবা আপনার দক্ষতা বাড়াতে চান, আমাদের</span> Interactive
+                Lessons <span class="font-bangla">আপনাকে নিয়ে যাবে অন্য একটি</span> Level <span class="font-bangla">
+                    এ</span></p>
+            <label class="floating-label pb-2">
+                <input type="text" placeholder="Enter Your Name" class="input input-md" />
+                
+            </label>
+            <label class="floating-label pb-2">
+                <input type="password" placeholder="Enter Your Password" class="input input-md" />
+            </label>
+            <button class="btn btn-primary">Get Started</button>
+        </div>
+        <div class="image flex-1">
+            <img src="./assets/hero-student.png" alt="">
+        </div>
+    </section>
 </body>
+
 </html>
